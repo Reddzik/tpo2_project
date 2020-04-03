@@ -16,6 +16,10 @@ public class CurrencyJsonParser {
 
     private void prepareData(String data, String countryCurrencyCode, String currecnyCodeToEqual){
         JSONObject dataJSON = new JSONObject(data).getJSONObject("rates");
+        if (currecnyCodeToEqual.isEmpty()) {
+            ratioToEqual = 1;
+            return;
+        }
         ratioToEqual = dataJSON.getDouble(currecnyCodeToEqual);
     }
 

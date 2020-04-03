@@ -1,20 +1,14 @@
 package Services;
-import Controllers.GUIController;
 import Controllers.JSONParsers.CountryJSONparser;
 import Controllers.JSONParsers.CurrencyJsonParser;
 import Controllers.JSONParsers.NBPJsonParser;
 import Controllers.JSONParsers.WeatherJsonParser;
 import org.json.*;
-
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.ProtocolException;
 import java.net.URL;
-import java.util.Objects;
 
 public class Service {
     private final String WEATHER_API_KEY= "3781566920336af86daec0e4b7ecfdae";
